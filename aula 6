@@ -1,0 +1,99 @@
+Questão 01: Cálculo de Nota Final
+
+Desenvolva um algoritmo em Java que receba (via teclado) as notas
+de duas provas de um aluno, e defina uma constante chamada
+MEDIA_APROVACAO com valor 7.0. O programa deve calcular a média
+aritmética das duas notas e verificar se o aluno foi aprovado.
+
+ Se a média for maior ou igual a 7.0, exiba: "Aprovado: true".
+ Caso contrário, exiba: "Aprovado: false".
+import java.util.Scanner;
+
+public class NotaFinal {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // Constante
+        final double
+
+
+Questão 02: Verificação de Compra
+
+Escreva um algoritmo em Java que declare as seguintes variáveis:
+
+ O preço de um produto.
+ O valor que o cliente tem disponível.
+ Uma constante chamada TAXA_DESCONTO, com valor de 10%
+(0.10).
+
+O programa deve calcular o preço final do produto com desconto e
+verificar se o cliente tem dinheiro suficiente para comprá-lo.
+ Exiba a mensagem: "Compra permitida: true" ou "Compra
+permitida: false".
+import java.util.Scanner;
+
+public class VerificacaoCompra {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // Constante
+        final double TAXA_DESCONTO = 0.10;
+
+        // Entrada de dados
+        System.out.print("Digite o preço do produto: ");
+        double precoProduto = input.nextDouble();
+
+        System.out.print("Digite o valor disponível do cliente: ");
+        double valorDisponivel = input.nextDouble();
+
+        // Cálculo do preço com desconto
+        double precoComDesconto = precoProduto - (precoProduto * TAXA_DESCONTO);
+
+        // Verificação da compra
+        boolean compraPermitida = valorDisponivel >= precoComDesconto;
+
+        // Exibição do resultado
+        System.out.println("Compra permitida: " + compraPermitida);
+        
+        input.close();
+    }
+}
+
+
+Questão 03: Triagem para Doação de Sangue
+
+Crie um programa em Java que declare variáveis para armazenar a
+idade de uma pessoa, o peso corporal e uma constante chamada
+PESO_MINIMO (50 kg). O programa deve verificar se a pessoa é
+elegível para doar sangue. Para ser elegível, a pessoa deve:
+
+ Ter 18 anos ou mais.
+ Pesar no mínimo 50 kg.
+
+O programa deve exibir no console:
+ "Apto para doar: true" ou "Apto para doar: false".
+import java.util.Scanner;
+
+public class DoacaoSangue {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // Constante
+        final double PESO_MINIMO = 50.0;
+
+        // Entrada de dados
+        System.out.print("Digite a idade da pessoa: ");
+        int idade = input.nextInt();
+
+        System.out.print("Digite o peso da pessoa (em kg): ");
+        double peso = input.nextDouble();
+
+        // Verificação de aptidão para doar
+        boolean aptoParaDoar = idade >= 18 && peso >= PESO_MINIMO;
+
+        // Exibição do resultado
+        System.out.println("Apto para doar: " + aptoParaDoar);
+        
+        input.close();
+    }
+}
