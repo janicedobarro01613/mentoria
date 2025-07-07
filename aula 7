@@ -1,0 +1,33 @@
+Ao compreender que além dos tipos primitivos de dados, o Java
+oferece os tipos de referência (classes) correspondentes a todos os
+tipos primitivos, pesquise e identifique um método que lhes chame a
+atenção em cada classe dos tipos Wrapper: Integer, Double,
+Character, Boolean e String.
+import java.util.Scanner;
+
+public class WrapperExemplo {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // Usando Integer.parseInt()
+        System.out.print("Digite sua idade (em números): ");
+        String idadeTexto = input.nextLine();
+        int idade = Integer.parseInt(idadeTexto);
+        System.out.println("Sua idade mais 1 será: " + (idade + 1));
+
+        // Usando Character.isLetter()
+        System.out.print("Digite um caractere: ");
+        char caractere = input.next().charAt(0);
+        boolean ehLetra = Character.isLetter(caractere);
+        System.out.println("É uma letra? " + ehLetra);
+
+        // Usando String.toUpperCase()
+        input.nextLine(); // Limpa o buffer
+        System.out.print("Digite seu nome: ");
+        String nome = input.nextLine();
+        System.out.println("Seu nome em maiúsculas: " + nome.toUpperCase());
+
+        input.close();
+    }
+}
+
