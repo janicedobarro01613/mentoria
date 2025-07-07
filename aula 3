@@ -1,0 +1,49 @@
+Questão-Problema 01: Cadastro de Aluno
+
+Um sistema de cadastro de alunos precisa armazenar as seguintes
+informações: o nome completo do aluno, sua idade, sua altura (em
+metros) e se ele está matriculado ou não.
+
+ Quais variáveis devem ser criadas?
+ Quais tipos de dados cada uma delas deve ter?
+| Variável          | Tipo de dado | Justificativa                             |
+| ----------------- | ------------ | ----------------------------------------- |
+| `nomeCompleto`    | `String`     | Armazena texto (nome do aluno)            |
+| `idade`           | `int`        | Idade é um número inteiro                 |
+| `altura`          | `double`     | Altura pode ter casas decimais (ex: 1.75) |
+| `estaMatriculado` | `boolean`    | Sim ou não (true ou false)                |
+
+
+Questão-Problema 02: Informações de Produto
+
+Você foi contratado para criar um programa que registre informações
+de um produto. O programa deve armazenar: o nome do produto, sua
+quantidade em estoque, o preço unitário e se ele está disponível para
+venda.
+
+ Identifique as variáveis necessárias.
+ Determine os tipos de dados adequados para cada uma.
+| Variável            | Tipo de dado | Justificativa                            |
+| ------------------- | ------------ | ---------------------------------------- |
+| `nomeProduto`       | `String`     | Nome do produto é texto                  |
+| `quantidadeEstoque` | `int`        | Quantidade é um valor inteiro            |
+| `precoUnitario`     | `double`     | Preço pode ter casas decimais (ex: 9.99) |
+| `disponivelVenda`   | `boolean`    | Sim ou não (true ou false)               |
+
+
+Questão-Problema 03: Dados de um Evento
+
+Um organizador de eventos deseja criar um sistema para registrar os
+seguintes dados de um evento: o nome do evento, o número de
+
+participantes esperados, o preço do ingresso e se o evento será
+presencial.
+
+ Quais variáveis você criaria para representar essas informações?
+ Que tipos de dados você usaria para cada variável?
+| Variável              | Tipo de dado | Justificativa              |
+| --------------------- | ------------ | -------------------------- |
+| `nomeEvento`          | `String`     | Nome é composto por texto  |
+| `numeroParticipantes` | `int`        | Número inteiro de pessoas  |
+| `precoIngresso`       | `double`     | Preço pode ter centavos    |
+| `eventoPresencial`    | `boolean`    | Sim ou não (true ou false) |
